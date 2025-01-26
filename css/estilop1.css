@@ -1,0 +1,55 @@
+body{
+    background:gray url("../imagenes/Fondo\ ruiz.jpg");/*color de fondo*/
+    font-family: Arial, Helvetica, sans-serif;/*tipo de letra*/
+    font-family: 1em;/*tamaño de letra*/
+}
+/*selector universal*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#contenedor{
+    width: 90%;
+    margin: 10px auto;
+}
+
+p{
+    text-align: justify;
+    color: white;
+    padding: 10px;
+}
+
+p.segundo{
+    color: rgb(0, 255, 64);
+    font-family: 1.2em;
+}
+
+section,main{
+    border: 2px,silver,solid;
+}
+
+main{
+    border-radius: 10px 50px 90px 120px;
+    height: 130px;
+}
+
+nav{
+    height: 80px;
+    text-align: center;
+    line-height: 80px; /*centrado verticalmente*/
+}
+ul li{
+    display: inline-block;
+    margin: 0px 30px;
+}
+
+ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    color:darkcyan;
+    text-decoration: underline;
+}
