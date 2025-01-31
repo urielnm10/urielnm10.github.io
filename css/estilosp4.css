@@ -9,25 +9,27 @@ body{
 }
 .contenedor{
     width: 90%;
+    max-width: 1200px;
     margin: 10px auto;
 }
 .cabecera{
-    height: 200px;
-    padding-top: 50px;
+    height: 20vh;
+    padding-top: 5vh;
     text-align: center;
     background-image: url(../img/img2.webp);
     background-size: cover;
+    background-position: center;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
-h1{
+.cabecera h1{
     margin-bottom: 20px;
 }
-.ingresar{
+.cabecera button{
     width: 400px;
     height: 40px;
     background-color: transparent;
-    color: red;
+    color: rgb(255, 255, 255);
     font-family: 'Trebuchet';
     font-size: 1.2em;
     border: 2px silver outset;
@@ -52,13 +54,23 @@ nav{
     line-height: 60px;
     text-align: right;
 }
+@media (max-width: 768px) {
+    .menu {
+        width: 100%; /* Ocupa todo el ancho en móviles */
+        text-align: center; /* Centra el texto */
+    }
+    .menu ul li {
+        display: block; /* Cambia a columna en móviles */
+        margin: 10px 0; /* Espaciado entre elementos */
+    }
+}
 .menu ul li{
     display: inline-block;
-    margin: 0px 50px;
+    margin: 0px 10px;
 }
 .menu ul li a{
     text-decoration: none;
-    color: black;
+    color: rgb(0, 0, 0);
 }
 .principal{
     clear: both;
@@ -115,4 +127,115 @@ nav{
     text-align: justify;
     font-size: 1.1em;
     color: black;
+}
+.tres img {
+    border-radius: 1em;
+    width: 100%; /* Ajusta el ancho al contenedor */
+    height: auto; /* Mantiene la proporción */
+    max-width: 100px; /* Limita el tamaño máximo */
+}
+hr{
+    width: 90%;
+    margin: 30px auto;
+    border: 3px silver solid;
+}
+.secundario{
+    clear: both;
+}
+.cuatro{
+    float: left;
+    width: 50%;
+    margin-top: 10px;
+}
+.cuatro h2{
+    text-align: left;
+    margin-top: 10px;
+}
+.cuatro p{
+    padding: 30px;
+    text-align: justify;
+}
+.cinco {
+    float: left;
+    width: 50%;
+    margin-top: 10px;
+    border: 5px silver solid;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+.cinco h2{
+    text-align: center;
+    margin-top: 10px;
+}
+.cinco p{
+    padding: 30px;
+    text-align: justify;
+}
+@media (max-width: 768px) {
+    .uno, .dos, .tres, .cuatro, .cinco {
+        width: 100%; /* Ocupa todo el ancho en móviles */
+        float: none; /* Elimina el float */
+    }
+}
+
+.formulario{
+    clear: both;
+}
+.contacto{
+    width: 50%;
+    margin: 10px auto;
+    padding: 20px;
+    border: 2px silver outset;
+    border-radius: 30px;
+    text-align: justify;
+}
+@media (max-width: 768px) {
+    .contacto {
+        width: 90%; /* Ocupa más ancho en móviles */
+    }
+}
+.contacto h2{
+    text-align: center;
+}
+.contacto label{
+    text-align: left;
+}
+.contacto p{
+    padding: 5px;
+    text-align: center;
+}
+.contacto p input{
+    text-align: center;
+}
+
+.enviar input{
+    height: 30px;
+    background-color: blue;
+    color: white;
+}
+
+
+.pie{
+    clear: both;
+}
+.redes{
+    text-align: center;
+    padding-top: 20px;
+}
+.redes ul li{
+    display: inline-block;
+    margin: 0 10px;
+}
+@media (max-width: 768px) {
+    .redes ul li {
+        display: block; /* Cambia a columna en móviles */
+        margin: 10px 0; /* Espaciado entre elementos */
+    }
+}
+.redes ul li i{
+    margin-right: 30px;
+}
+.vertical{
+    width: 20%;
+    margin: 20px auto;
 }

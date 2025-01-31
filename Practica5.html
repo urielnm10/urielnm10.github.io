@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="contenedor">
+        <form action="" method="get">
+            <p><label for="nombre">Nombre</label><br>
+                <input type="text" id="nombre" name="nombre" autofocus placeholder="Su nombre" required title="Ingrese su nombre" >
+            </p>
+            <p><label for="apellidos">Apellidos</label><br>
+                <input type="text" id="apellidos" name="apellidos" placeholder="Sus apellidos" required size="50" title="Ingrese sus apellidos">
+            </p>
+            <p><label for="genero">Genero</label> <br>
+                <input type="text" id="genero" name="genero" value="Masculino" readonly >
+            </p>
+            <p><label for="sexo">Sexo</label><br>
+                <input type="radio" name="sexo" value="1" checked>Mujer
+                <br>
+                <input type="radio" name="sexo" value="2">Hombre
+            </p>
+            <p>
+                <input type="hidden" id="clave" name="clave" value="1000">
+            </p>
+            <p><label for="comentario">Comentario</label> <br>
+                <textarea name="comentario" id="comentario" required cols="50" rows="6"></textarea>
+            </p>
+            <p><label for="municipio">Municipio</label>
+                <select name="municipio" id="municipio" required>
+                    <option value="">Seleccione</option>
+                    <option value="1">Ecatepec</option>
+                    <option value="2">Nezahualcoyolt</option>
+                    <option value="3">Naucalpan</option>
+                </select>
+            </p>
+            <p>
+                <input type="submit" name="Enviar" value="Enviar" >
+            </p>
+        </form>
+    </div>
+</body>
+</html>
