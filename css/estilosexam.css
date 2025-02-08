@@ -1,0 +1,122 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+}
+.contenedor{
+    width: 90%;
+    margin: 10px auto;
+}
+nav{
+    background-color: gray;
+    height: 60px;
+    text-align: right;
+}
+.logo{
+    width: 25%;
+    float: left;
+    text-align: center;
+    margin-top: .2em;
+}
+.circulo{
+    border-radius: 50%;
+}
+.menu{
+    width: 50%;
+    float: left;
+    text-align: center;
+    margin-top: 1.2em;
+}
+.menu ul li{
+    display: inline;
+    margin: 2px;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.botones{
+    width: 25%;
+    float: left;
+    text-align: center;
+    margin-top: 1.2em;
+}
+main{
+    background: url(../img/img2.webp);
+    height: 8.1em;
+}
+.uno{
+    text-align: center;
+}
+.dos{
+    width: 33.3%;
+    text-align: left;
+    float: left;
+}
+.tres{
+    float: left;
+    width: 33.3%;
+    text-align: center;
+}
+.cuatro{
+    width: 33.3%;
+    float: left;
+    text-align: right;
+}
+.cuatro img{
+    display: inline;
+    margin: 2px;
+}
+section{
+    clear: both;
+}
+.one{
+    width: 50%;
+    float: left;
+}
+.two{
+    border: 2px silver solid;
+    width: 50%;
+    float: left;
+}
+.circule{
+    border-radius: 50%;
+}
+.info1{
+    width: 50%;
+    float: left;
+    margin-top: 3em;
+    text-align: center;
+}
+.text1{
+    border: 2px silver solid;
+}
+.info2{
+    width: 50%;
+    float: left;
+}
+.cont1{
+    border: 3px silver solid;
+    width: 25%;
+    float: left;
+    text-align: center
+}
+.cont1 img{
+    border-radius: 50%;
+}
+.cont2{
+    border-radius: 30%;
+    border: 3px silver solid;
+    width: 33.3%;
+    float: left;
+    text-align: center
+}
+.cont3{
+    width: 33.3%;
+    float: left;
+    text-align: center
+}
+
