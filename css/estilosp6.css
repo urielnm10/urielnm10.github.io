@@ -18,18 +18,29 @@ body {
 }
 
 .logo {
-    width: 10%;
-}
-
-.circulo {
-    border-radius: 50%;
+    width: 8%; /* Reducido para evitar empujes */
+    min-width: 60px; /* Para que no se haga demasiado pequeño en pantallas pequeñas */
+    display: flex;
+    align-items: center;
 }
 
 .menu {
-    width: 80%;
+    width: 74%; /* Ajustado para dejar espacio a los otros elementos */
     text-align: center;
-    height: 60%;
     margin-top: 0.7em;
+}
+
+.redes {
+    width: 8%;
+    min-width: 120px; /* Para asegurar que los íconos de redes no se desborden */
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px; /* Espacio entre los iconos */
+}
+
+
+.circulo {
+    border-radius: 50%;
 }
 
 .menu ul li {
@@ -39,13 +50,6 @@ body {
 
 .menu ul li a {
     text-decoration: none;
-}
-
-.redes {
-    width: 10%;
-    height: 60px;
-    display: flex;
-    justify-content: flex-end;
 }
 
 .social {
@@ -69,6 +73,11 @@ body {
 }
 
 .cabecera button {
+    width: 100%; /* En lugar de un ancho fijo de 400px */
+    max-width: 300px; /* Máximo ancho permitido */
+}
+
+.cabecera button {
     width: 400px;
     height: 40px;
     background-color: transparent;
@@ -78,12 +87,16 @@ body {
     border: 2px silver outset;
 }
 
+
 .tarjeta {
-    width: 33%;
+    width: 32%; /* Ajustado para que tres tarjetas entren bien en una fila */
     text-align: center;
     margin-top: 1em;
     margin-bottom: 1em;
     border: 2px solid;
+    box-sizing: border-box; /* Evita que los bordes y padding sumen ancho extra */
+    padding: 1em; /* Añadir espacio dentro de las tarjetas */
+    overflow: hidden; /* Evita que los elementos internos se salgan */
 }
 
 .izq {
@@ -114,6 +127,19 @@ body {
 .pie {
     width: 100%;
 }
+
+@media only screen and (max-width: 800px) {
+    .logo, .menu, .redes {
+        width: 100%; /* Que ocupen toda la fila */
+        text-align: center;
+        justify-content: center;
+    }
+
+    .redes {
+        justify-content: center; /* Centrar los íconos de redes en móviles */
+    }
+}
+
 
 @media only screen and (max-width: 800px) {
     .logo,
